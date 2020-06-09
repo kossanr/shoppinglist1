@@ -31,7 +31,7 @@ $(function () {
     // using .on() becasue there may be dynamically generated elements in the future
     //.on() targets the specific event watched for ("click")
 
-    $(this).closest("li").remove();
+    $(this).parent().parent().remove();
     //.closest() identifies closest 'li' element (clicked) and removes it
   });
 
